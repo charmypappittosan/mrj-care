@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "Name": "Chemo Therapy",
+    "description":"Chemotherapy is a drug treatment that uses powerful chemicals to kill fast-growing cells in your body. Chemotherapy is most often used to treat cancer, since cancer cells grow and multiply much more quickly than most cells in the body. Many different chemotherapy drugs are available.",
+    "image": "https://i.ibb.co/YX8tWZk/1.jpg"
+  },
+  {
+    "id": 2,
+    "Name": "HbA1c",
+    "description":"The hemoglobin A1c (HbA1c) test measures the amount of blood sugar (glucose) attached to your hemoglobin. Hemoglobin is the part of your red blood cells that carries oxygen from your lungs to the rest of your body. It is an important blood test that gives a good indication of how well your diabetes is being controlled",
+    "image": "https://i.ibb.co/R2Hq6vy/2.jpg"
+  },
+  {
+    "id": 3,
+    "Name": "ETT",
+    "description":"An exercise tolerance test (ETT) is helpful in evaluating a patient's heart function during exertion, and detecting the presence of coronary artery disease and arrhythmias",
+    "image": "https://i.ibb.co/tmX34nY/3.jpg"
+  },
+  {
+    "id": 4,
+    "Name": "X-Ray chest PA View",
+    "description":"X-rays can be used to examine most areas of the body. They're mainly used to look at the bones and joints, although they're sometimes used to detect problems affecting soft tissue, such as internal organs. Problems that may be detected during an X-ray include: bone fractures and breaks.",
+    "image": "https://i.ibb.co/84JPF7y/4.jpg"
+  },
+  {
+    "id": 5,
+    "Name": "SGPT",
+    "description":"An enzyme found in the liver and other tissues. A high level of SGPT released into the blood may be a sign of liver damage, cancer, or other diseases. Also called alanine transferase and serum glutamate pyruvate transaminase.",
+    "image": "https://i.ibb.co/b2rnTJw/5.jpg"
+  },
+  {
+    "id": 6,
+    "Name": "ECG",
+    "description":"An electrocardiogram (ECG or EKG) records the electrical signal from the heart to check for different heart conditions. Electrodes are placed on the chest to record the heart's electrical signals, which cause the heart to beat.",
+    "image": "https://i.ibb.co/z4Q46h4/6.jpg"
+  },
+  {
+    "id": 7,
+    "Name": "Lipid Profile",
+    "description":"The lipid panel helps evaluate cardiovascular health by analyzing cholesterol in the blood. Too much cholesterol can build up in the blood vessels and arteries, damaging them and heightening the risk of problems like heart disease, stroke, and heart attack.",
+    "image": "https://i.ibb.co/H4NvRxw/7.jpg"
+  }
+]

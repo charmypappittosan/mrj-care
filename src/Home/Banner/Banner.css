@@ -1,0 +1,20 @@
+#banner-img{
+    width: 100%;
+    height: 500px;
+}
+.banner-text{
+    color: black;
+}
+.banner{
+    background-color: rgb(218, 241, 251)
+}
+.banner-btn{
+    background-color: rgb(28, 54, 57);
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    width: 160px;
+    font-weight: 500;
+    color: beige;
+
+}
