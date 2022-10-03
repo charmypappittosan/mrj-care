@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, FormLabel } from 'react-bootstrap';
+import { Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import pic from '../../image/maria.jpg';
 import './DoctorProfile.css';
@@ -22,10 +22,10 @@ const DoctorProfile = () => {
                 BCS (Health), MD (Internal Medicine). I am an Assistant
                 Professor in the Department of Medicine at Sheikh Hasina Medical
                 College Hospital, Dhaka. I regularly provide treatment to my
-                patients at{" "}
-                <h4 style={{ color: "skyblue", display: "inline" }}>
+                patients at 
+                <span style={{ color: "skyblue", display: "inline",fontSize:"20px" }}>
                   MRJ-CARE Hospital
-                </h4>{" "}
+                </span>
                 on Friday and Saturday from 4pm to 9pm.
               </p>
             </div>
