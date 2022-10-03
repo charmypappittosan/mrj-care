@@ -1,0 +1,8 @@
+.about-me{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.book-title:hover{
+    color: rgb(0, 145, 255);
+
+}

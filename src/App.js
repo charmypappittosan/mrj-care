@@ -1,18 +1,15 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Banner from './Home/Banner/Banner';
 import Footer from './Home/Footer/Footer';
 import Header from './Home/Header/Header';
 import Home from './Home/Home/Home';
 import AddToCart from './Main/AddToCart/AddToCart';
 import ContactUs from './Main/ContactUs/ContactUs';
 import DoctorProfile from './Main/DoctorProfile/DoctorProfile';
-import Feedbacks from './Main/Feedbacks/Feedbacks';
-import Login from './Main/Login/Login';
+import Signup from './Authentication/Signup/Signup';
 import ServiceDetails from './Main/ServiceDetails/ServiceDetails';
-import Services from './Main/Services/Services';
-import Signup from './Main/Signup/Signup';
+import Login from './Authentication/Login/Login';
 
 
 function App() {
