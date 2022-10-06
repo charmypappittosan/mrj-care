@@ -1,23 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
-   const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+   const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
    const navigate=useNavigate();
-   let errorElement;
    const handleSubmit=event=>{
     event.preventDefault();
-    // const name=event.target.name.value;
+    const name=event.target.name.value;
     const email=event.target.email.value;
     const password=event.target.password.value;
     createUserWithEmailAndPassword(email,password);
-    navigate("/home");
    }
    if(user){
     navigate("/home");
+    console.log('user created');
    }
   
     
@@ -31,7 +30,7 @@ const Signup = () => {
             <Form.Label className="label">Full Name</Form.Label>
             <Form.Control
               type="text"
-              name="name"
+              name='name'
               placeholder="Enter Your Name"
               required
             />
@@ -40,7 +39,7 @@ const Signup = () => {
             <Form.Label className="label">Email address</Form.Label>
             <Form.Control
               type="email"
-              name="email"
+              name='email'
               placeholder="Enter email"
               required
             />
@@ -53,7 +52,7 @@ const Signup = () => {
             <Form.Label className="label">Password</Form.Label>
             <Form.Control
               type="password"
-              name="password"
+              name='password'
               placeholder="Password"
               required
             />

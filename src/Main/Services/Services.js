@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service';
-import ServiceDetails from '../ServiceDetails/ServiceDetails';
 import './Services.css';
 
 const Services = () => {
