@@ -11,6 +11,8 @@ import Signup from "./Authentication/Signup/Signup";
 import ServiceDetails from "./Main/ServiceDetails/ServiceDetails";
 import Login from "./Authentication/Login/Login";
 import ResetPassword from "./Authentication/ResetPassword/ResetPassword";
+import NotFound from "./Others/NotFound/NotFound";
+import AllServices from "./Main/AllServices/AllServices";
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
         <Route path="/addtocart" element={<AddToCart></AddToCart>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
+        <Route path="/allservices" element={<AllServices></AllServices>}></Route>
         <Route
           path="/resetpassword"
           element={<ResetPassword></ResetPassword>}
@@ -36,7 +39,13 @@ function App() {
           path="/service/:serviceId"
           element={<ServiceDetails></ServiceDetails>}
         ></Route>
+        <Route
+          path="/allservice/:serviceId"
+          element={<ServiceDetails></ServiceDetails>}
+        ></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+
       <Footer></Footer>
     </div>
   );

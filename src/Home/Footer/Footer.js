@@ -8,9 +8,11 @@ import logo3 from '../../image/telephone.png';
 
 
 const Footer = () => {
+   const today = new Date();
+   const year = today.getFullYear();
     return (
       <div
-        style={{ color: "rgba(255, 255, 255, 0.55)" }}
+        style={{ color: "rgba(255, 255, 255, 0.55)"}}
         className="  container-footer text-center"
       >
         <div
@@ -32,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
         <p style={{paddingRight:'5px'}}>
-          <img style={{marginTop:"5px"}} id="small-logo" src={logo1} alt=""/>2022.Dr.Maria Jahan.All Right
+          <img style={{marginTop:"5px"}} id="small-logo" src={logo1} alt=""/>{year}.Dr.Maria Jahan.All Right
           Reserved
         </p>
       </div>

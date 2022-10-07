@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import logo from '../../image/otherLogin/github.png';
 import logo1 from '../../image/otherLogin/google.png';
+import Loading from '../../Others/Loading/Loading';
 import './OtherLogin.css';
 
 const OtherLogin = () => {
@@ -18,6 +19,9 @@ const OtherLogin = () => {
     }
     if(user || user1){
         navigate("/home");
+    }
+    if(loading || loading1){
+        return <Loading></Loading>
     }
     return (
       <div>

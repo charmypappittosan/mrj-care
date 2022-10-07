@@ -3,16 +3,17 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
+import Loading from '../../Others/Loading/Loading';
 
 const ResetPassword = () => {
     const [email, setEmail] = useState("");
     const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(auth);
     let errorElement;
      if (error) {
-           errorElement=<p>Error: {error.message}</p>
+           errorElement=<p className='text-danger'>Error: {error.message}</p>
      }
     if(sending){
-        return <p>sending...</p>
+       return <Loading></Loading>;
     }
 
     return (

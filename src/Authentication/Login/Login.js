@@ -4,6 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../../Others/Loading/Loading';
 import OtherLogin from '../OtherLogin/OtherLogin';
 import ResetPassword from '../ResetPassword/ResetPassword';
 import './Login.css';
@@ -20,6 +21,9 @@ const Login = () => {
       const email=event.target.email.value;
       const password=event.target.password.value;
       signInWithEmailAndPassword(email,password);
+    }
+    if(loading){
+      return <Loading></Loading>
     }
     if(user){
       navigate("/home");
