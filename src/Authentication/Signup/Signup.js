@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
-   const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
+   const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
    const navigate=useNavigate();
    const handleSubmit=event=>{
     event.preventDefault();
@@ -68,6 +68,7 @@ const Signup = () => {
             Register
           </Button>
         </Form>
+        <p>Already have an account? <Link className='text-decoration-none' to="/login">Go to Login</Link></p>
       </div>
     );
 };

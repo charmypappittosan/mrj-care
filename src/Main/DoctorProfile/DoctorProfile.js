@@ -6,9 +6,9 @@ import './DoctorProfile.css';
 
 const DoctorProfile = () => {
     return (
-      <div>
+      <div id="doctorprofile">
         <div>
-          <h1 className='text-center'>About Me</h1>
+          <h1 className="text-center">About Me</h1>
         </div>
         <div className="about-me">
           <div className="d-flex">
@@ -22,8 +22,14 @@ const DoctorProfile = () => {
                 BCS (Health), MD (Internal Medicine). I am an Assistant
                 Professor in the Department of Medicine at Sheikh Hasina Medical
                 College Hospital, Dhaka. I regularly provide treatment to my
-                patients at 
-                <span style={{ color: "skyblue", display: "inline",fontSize:"20px" }}>
+                patients at
+                <span
+                  style={{
+                    color: "skyblue",
+                    display: "inline",
+                    fontSize: "20px",
+                  }}
+                >
                   MRJ-CARE Hospital
                 </span>
                 on Friday and Saturday from 4pm to 9pm.

@@ -10,6 +10,7 @@ import DoctorProfile from "./Main/DoctorProfile/DoctorProfile";
 import Signup from "./Authentication/Signup/Signup";
 import ServiceDetails from "./Main/ServiceDetails/ServiceDetails";
 import Login from "./Authentication/Login/Login";
+import ResetPassword from "./Authentication/ResetPassword/ResetPassword";
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
         <Route path="/addtocart" element={<AddToCart></AddToCart>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
+        <Route
+          path="/resetpassword"
+          element={<ResetPassword></ResetPassword>}
+        ></Route>
         <Route
           path="/service/:serviceId"
           element={<ServiceDetails></ServiceDetails>}
