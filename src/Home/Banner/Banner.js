@@ -1,8 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../image/banner.jpg';
 import './Banner.css';
 
 const Banner = () => {
+  const navigate=useNavigate();
+  const handleExplore=()=>{
+    navigate("/allservices");
+  }
     return (
       <div className="banner d-flex ">
         <div
@@ -15,7 +20,7 @@ const Banner = () => {
             provide an healthy environment for treatment.<br></br> You find the
             world best technology here<br></br> and a complete pharmacy.
           </p>
-          <button className='banner-btn'>Explore More</button>
+          <button onClick={handleExplore} className='banner-btn'>Explore More</button>
         </div>
         <div>
           <img id="banner-img" src={logo} alt=""></img>

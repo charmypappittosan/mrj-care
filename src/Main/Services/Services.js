@@ -24,13 +24,10 @@ const Services = () => {
           </h1>
         </div>
         <div className="services-container align-items-center justify-content-center">
-          {services.slice(0,6).map((service) => (
+          {services.slice(0, 6).map((service) => (
             <Service key={service.id} service={service}></Service>
           ))}
-          {
-            user?<Link to="/allservices">See More</Link>:<Link to="/login">See More</Link>
-
-          }
+          <Link to="/allservices">See More</Link>
         </div>
       </div>
     );
