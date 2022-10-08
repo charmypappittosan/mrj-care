@@ -1,10 +1,16 @@
 import React from 'react';
 import { Button} from 'react-bootstrap';
+import { useNavigation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import pic from '../../image/maria.jpg';
 import './DoctorProfile.css';
 
 const DoctorProfile = () => {
+  const navigate =useNavigation()
+  const handleAppointment=()=>{
+    navigate("/checkout");
+
+  }
     return (
       <div id="doctorprofile" className='about'>
         <div>
@@ -57,7 +63,7 @@ const DoctorProfile = () => {
               placeholder="Appointment Time"
             />
             <Link to="/addtocart">
-              <Button varient="primary" className="d-block">
+              <Button varient="primary" className="d-block" onClick={handleAppointment}>
                 Book For Appointment
               </Button>
             </Link>
