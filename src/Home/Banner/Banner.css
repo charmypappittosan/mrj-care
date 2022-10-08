@@ -6,7 +6,10 @@
     color: black;
 }
 .banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     background-color: rgb(218, 241, 251)
+    
 }
 .banner-btn{
     background-color: rgb(28, 54, 57);
@@ -18,3 +21,25 @@
     color: beige;
 
 }
+@media only screen and (max-width:688px) {
+   .banner{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   gap: 60px;
+   }
+   .banner-text{
+    text-align: center;
+   }
+    
+}
+/* @media only screen and (min-width:688px) and (max-width:992px) {
+   .banner{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   gap: 60px;
+   }
+   .banner-text{
+    text-align: center;
+   }
+    
+} */

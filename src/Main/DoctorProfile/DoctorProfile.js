@@ -6,7 +6,7 @@ import './DoctorProfile.css';
 
 const DoctorProfile = () => {
     return (
-      <div id="doctorprofile">
+      <div id="doctorprofile" className='about'>
         <div>
           <h1 className="text-center">About Me</h1>
         </div>
@@ -37,7 +37,7 @@ const DoctorProfile = () => {
             </div>
           </div>
           <div className="appointment-container m-auto align-items-center justify-content-center">
-            <p className="book-title">Haven't booked yet?</p>
+            <h5 style={{color:"grey"}} className="book-title">Haven't booked yet?</h5>
             <h5 style={{ marginBottom: "10px" }}>Name:</h5>
             <input
               style={{ marginBottom: "30px" }}

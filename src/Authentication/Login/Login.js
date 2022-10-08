@@ -10,7 +10,7 @@ import './Login.css';
 const Login = () => {
   
   const navigate=useNavigate();
-  const location=useLocation();
+  
   let errorElement;
   const [
     signInWithEmailAndPassword,
@@ -23,19 +23,21 @@ const Login = () => {
       const password=event.target.password.value;
       signInWithEmailAndPassword(email,password);
     }
-    var from=location.state.from.pathname || "/";
+    const location = useLocation();
+    const from=location.state?.from?.pathname || "/";
 
     if(loading){
       return <Loading></Loading>
     }
+      if (error) {
+        errorElement = <p className="text-danger">Error: {error.message}</p>;
+      }
 
     
-    if(user){
-      navigate(from, {replace:true});
+    if (user) {
+      navigate(from, { replace: true });
     }
-    if (error) {
-        errorElement=<p className='text-danger'>Error: {error.message}</p>
-    }
+     
       return (
         <div className="mx-auto w-50">
           <h2 style={{ marginTop: "20px" }} className="text-center">

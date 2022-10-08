@@ -4,11 +4,16 @@
 }
 .card-container{
     width: 100%;
- 
     border: 1px solid lightgray;
     border-radius: 10px;
     padding-bottom: 10px;
     text-align: center;
     box-shadow: 4px 4px 4px 4px rgb(17, 10, 10);
 
+}
+@media only screen and (max-width:688px){
+    .card-container{
+       width: 100%;
+
+    }
 }

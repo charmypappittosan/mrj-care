@@ -4,8 +4,6 @@ import "./App.css";
 import Footer from "./Home/Footer/Footer";
 import Header from "./Home/Header/Header";
 import Home from "./Home/Home/Home";
-import AddToCart from "./Main/Blogs/Blogs";
-import ContactUs from "./Main/Checkout/Checkout";
 import DoctorProfile from "./Main/DoctorProfile/DoctorProfile";
 import Signup from "./Authentication/Signup/Signup";
 import ServiceDetails from "./Main/ServiceDetails/ServiceDetails";
@@ -13,7 +11,7 @@ import Login from "./Authentication/Login/Login";
 import ResetPassword from "./Authentication/ResetPassword/ResetPassword";
 import NotFound from "./Others/NotFound/NotFound";
 import AllServices from "./Main/AllServices/AllServices";
-import RequiredAuth from "./Authentication/RequiredAuth/RequiredAuth";
+import RequireAuth from "./Authentication/RequireAuth/RequireAuth";
 import Checkout from "./Main/Checkout/Checkout";
 import Blogs from "./Main/Blogs/Blogs";
 
@@ -28,9 +26,9 @@ function App() {
         <Route
           path="/checkout"
           element={
-            <RequiredAuth>
+            <RequireAuth>
               <Checkout></Checkout>
-            </RequiredAuth>
+            </RequireAuth>
           }
         ></Route>
         <Route

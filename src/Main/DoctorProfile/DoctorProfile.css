@@ -6,3 +6,52 @@
     color: rgb(0, 145, 255);
 
 }
+@media only screen and (max-width:622px) {
+   .about-me{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+   }
+   .appointment-container{
+    width:100%;
+    box-shadow: 2px 2px 2px 2px grey;
+    margin: auto;
+   }
+   input{
+    margin-left: 20%;
+   }
+   h5{
+    margin-left: 20%;
+   }
+   Button{
+    margin-left: 20%;
+    margin-bottom: 2%;
+
+   }
+    
+}
+@media only screen and (min-width:622px) and (max-width:992px) {
+    .about-me{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+
+    }
+    .appointment-container{
+    width:100%;
+    box-shadow: 2px 2px 2px 2px grey;
+    margin: auto;
+   }
+   input{
+    margin-left: 20%;
+   }
+   h5{
+    margin-left: 20%;
+   }
+   Button{
+    margin-left: 20%;
+    margin-bottom: 2%;
+
+   }
+    
+}
