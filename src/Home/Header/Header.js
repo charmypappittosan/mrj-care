@@ -28,19 +28,22 @@ const Header = () => {
                   Feedbacks
                 </Nav.Link>
 
-                <Nav.Link eventKey={5} href="home#contactus">
-                  Contact Us
+                <Nav.Link eventKey={4} href="/checkout">
+                  Checkout
                 </Nav.Link>
-                <Nav.Link eventKey={6} href="home#doctorprofile">
+                <Nav.Link eventKey={7} href="/blogs">
+                  Blogs
+                </Nav.Link>
+                <Nav.Link eventKey={3} href="home#doctorprofile">
                   Doctor Profile
                 </Nav.Link>
-                <Nav.Link eventKey={4} as={Link} to="/signup">
+                <Nav.Link eventKey={5} as={Link} to="/signup">
                   SignUp
                 </Nav.Link>
                 {user ? (
                   <Button style={{width:"90px",height:"35px",backgroundColor:"grey",border:"none",marginLeft:"5px",borderRadius:"20px"}}  onClick={handleSignOut}>Logout</Button>
                 ) : (
-                  <Nav.Link eventKey={3} as={Link} to="/login">
+                  <Nav.Link eventKey={6} as={Link} to="/login">
                     Login
                   </Nav.Link>
                 )}

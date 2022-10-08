@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ContactUs = () => {
+const Checkout = () => {
     return (
         <div>
-            
+            item added
         </div>
     );
 };
 
-export default ContactUs;
+export default Checkout;

@@ -8,7 +8,7 @@ const ServiceDetails = () => {
     return (
         <div className='text-dark'>
             <h1>{serviceId}</h1>
-          <Link to="/addtocart"><button onClick={notify}>Add To Cart</button></Link>
+          <Link to="/checkout"><button onClick={notify}>Add To Cart</button></Link>
         </div>
     );
 };

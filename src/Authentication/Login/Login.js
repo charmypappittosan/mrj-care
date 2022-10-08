@@ -2,14 +2,15 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../../Others/Loading/Loading';
 import OtherLogin from '../OtherLogin/OtherLogin';
-import ResetPassword from '../ResetPassword/ResetPassword';
 import './Login.css';
 const Login = () => {
+  
   const navigate=useNavigate();
+  const location=useLocation();
   let errorElement;
   const [
     signInWithEmailAndPassword,
@@ -22,11 +23,15 @@ const Login = () => {
       const password=event.target.password.value;
       signInWithEmailAndPassword(email,password);
     }
+    var from=location.state.from.pathname || "/";
+
     if(loading){
       return <Loading></Loading>
     }
+
+    
     if(user){
-      navigate("/home");
+      navigate(from, {replace:true});
     }
     if (error) {
         errorElement=<p className='text-danger'>Error: {error.message}</p>
